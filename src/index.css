@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-title: #ffe978;
+    --color-search: #eaeaea;
+    --color-default: #fff;
+    --color-result-bg: #504d4d;
+
+
+}
+
+
+/*sehir-yazi-boyut: 64px;
+--derece-yazi-boyut: 96px;
+--statu-yazi-boyut: 36px; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 950px) {
+    .application {
+        width: 60%;
+        height: 100vh;
+        margin: 0 auto;
+        background-color: rgba(3, 3, 3, 0.50);
+
+    }
+
+}
+
+
+
+.background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -10;
+    left: 0;
+    top: 0;
+}
+
+.background .background-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: -5;
+    right: 0;
+    bottom: 0;
+
+}
+
+.background .overlay {
+    position: absolute;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#title {
+    margin-top: 50px;
+    text-align: center;
+    color: var(--color-title);
+    font-size: 65px;
+    font-family: 'Caveat', cursive;
+
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.search .search-input {
+    width: 40%;
+    height: 35px;
+    text-align: center;
+    border-radius: 5rem;
+    padding: 13px;
+    border: none;
+    font-size: 24px;
+    background-color: var(--color-search);
+
+
+}
+
+
+.result {
+    position: relative;
+    margin-top: 85px;
+
+
+}
+
+.result .city {
+    color: var(--color-default);
+    font-size: 55px;
+    text-align: center;
+
+}
+
+.result .detail {
+    background-color: var(--color-result-bg);
+    width: 100%;
+    height: 190px;
+    background-color: var(--color-result-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    opacity: 0.6;
+}
+
+.result .detail .degree {
+    color: var(--color-default);
+    font-size: 85px;
+    font-weight: bold;
+}
+
+.result .detail .status {
+    color: var(--color-default);
+    font-size: 30px;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
